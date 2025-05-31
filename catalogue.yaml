@@ -74,7 +74,7 @@
       msg: "{{ db_output }}"
 
   - name: Load the products to db
-    ansible.builtin.shell: mongosh --host mongodb.roboshop.space <app/db/master-data.Js
+    ansible.builtin.shell: mongosh --host mongodb.roboshop.space < /app/db/master-data.js
     when: db_output.stdout | int < 0  
 
   
