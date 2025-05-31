@@ -22,7 +22,7 @@
   # Replace the whole line in a file
   - name: disable protected mode
     ansible.builtin.lineinfile:
-      path: /tec/redis/redis.conf
+      path: /etc/redis/redis.conf
       regex: 'protected-mode'
       line: protected-mode no
   
