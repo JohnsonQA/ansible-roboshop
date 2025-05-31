@@ -42,7 +42,7 @@
   
   - name: Remove default nginx conf file
     ansible.builtin.file:
-      src: /etc/nginx/nginx.conf      # we are deleting cuz it will create by default when nginx installed
+      path: /etc/nginx/nginx.conf      # we are deleting cuz it will create by default when nginx installed
       state: absent
   
   - name: copy roboshop nginx conf
