@@ -75,6 +75,6 @@
 
   - name: Load the products to db
     ansible.builtin.shell: mongosh --host mongodb.roboshop.space <app/db/master-data.Js
-    when: db_output.std_out | int < 0  
+    when: db_output.stdout | int < 0  
 
   
