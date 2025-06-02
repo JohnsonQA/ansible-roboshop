@@ -16,7 +16,7 @@
       name: "{{ item }}"
       executable: pip3.9
     loop:
-    - cyrptography
+    - Cyrptography
     - PyMySQL
   
   - name: create system user
